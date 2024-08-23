@@ -1,0 +1,608 @@
+.students {
+    margin-top: 0px !important;
+}
+
+.upload-box > p {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.icon {
+    width: 90px;
+    height: 90px;
+}
+
+.upload-box {
+    width: 100%;
+    background-color: cadetblue;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
+}
+
+.upload-box form {
+    height: 170px;
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #0086fe;
+}
+
+form :where(i, p) {
+    color: #0086fe;
+}
+
+form i {
+    font-size: 50px;
+}
+
+form p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+section .row {
+    margin-bottom: 10px;
+    background-color: #d5ebff;
+    list-style: none;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .row i {
+    color: #0086fe;
+    font-size: 30px;
+}
+
+section .details span {
+    font-size: 12px;
+}
+
+.loading-area .row .content {
+    width: 100px;
+    margin-left: 15px;
+}
+
+.loading-area .details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    justify-content: space-between;
+}
+
+.loading-area .content .loading-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+
+.content .loading-bar .loading {
+    width: 10%;
+    height: 100%;
+    background-color: #0086fe;
+    border-radius: inherit;
+}
+
+.uploaded-area {
+    overflow-y: scroll;
+}
+
+.uploaded-area.onprogress {
+    max-width: 150px;
+}
+
+.uploaded-area::-webkit-scrollbar {
+    width: 0px;
+}
+
+.uploaded-area .row .content {
+    display: flex;
+    align-items: center;
+}
+
+.uploaded-area .row .details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.uploaded-area .row .details .size {
+    color: #404040;
+    font-size: 11px;
+}
+
+.uploaded-area i.fa-check {
+    font-size: 16px;
+}
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+.b1 {
+    font-family: inherit;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.b1 span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.b1 svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.b1:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.b1:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.b1:hover span {
+    transform: translateX(5em);
+}
+
+.b1:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+.cssbuttons-io-button {
+    background: #a370f0;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+/* done  */
+.Btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: rgb(255, 65, 65);
+}
+
+/* plus sign */
+.sign {
+    width: 100%;
+    transition-duration: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign LogoutIcon {
+    width: 17px;
+}
+
+.sign LogoutIcon path {
+    fill: white;
+}
+/* text */
+.text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: 0.3s;
+}
+/* hover effect on button width */
+.Btn:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: 0.3s;
+    background-color: rgb(255, 65, 65);
+}
+
+.Btn:hover .sign {
+    width: 30%;
+    transition-duration: 0.3s;
+    padding-left: 20px;
+}
+/* hover effect button's text */
+.Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: 0.3s;
+    padding-right: 10px;
+}
+/* button click effect*/
+.Btn:active {
+    transform: translate(2px, 2px);
+}
+
+.component-title {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 30px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #888;
+    text-align: center;
+}
+
+/* The switch - the box around the slider */
+.container2 {
+    width: 51px;
+    height: 31px;
+    position: relative;
+}
+
+/* Hide default HTML checkbox */
+.checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+/* The switch */
+.switch {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #e9e9eb;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+/* The slider */
+.slider {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: calc(50% - 27px / 2 - 10px);
+    top: calc(50% - 27px / 2);
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.checkbox:checked + .switch {
+    background-color: #34c759;
+}
+
+.checkbox:checked + .switch .slider {
+    left: calc(50% - 27px / 2 + 10px);
+    top: calc(50% - 27px / 2);
+}
+/* Ensure the button and icon stay within bounds */
+.container {
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.b2 {
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #e62222;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    position: relative; /* Ensure that child elements are positioned relative to this container */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.b2,
+.b2 span {
+    transition: 200ms;
+}
+
+.b2 .text1 {
+    transform: translateX(20px);
+    color: white;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.b2 .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(70px);
+    height: 25px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensure the icon stays within the button */
+}
+
+.b2 svg {
+    width: 15px;
+    fill: #eee;
+}
+
+.b2:hover {
+    background: #ff3636;
+}
+
+.b2:hover .text1 {
+    color: transparent;
+}
+
+.b2:hover .icon {
+    width: 100%; /* Ensure icon width expands to fit button width */
+    border-left: none;
+    transform: translateX(0);
+}
+
+.b2:focus {
+    outline: none;
+}
+
+.b2:active .icon svg {
+    transform: scale(0.8);
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+    .b2 {
+        width: auto;
+        min-width: 50px;
+    }
+
+    .b2 .text1 {
+        transform: translateX(5px);
+    }
+}
+
+/* From Uiverse.io by andrew-demchenk0 */
+.b3 {
+    position: relative;
+    width: 180px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #192b8f;
+    background-color: #192b8f;
+}
+
+.b3,
+.button__icon,
+.button__text {
+    transition: all 0.3s;
+}
+
+.b3 .button__text {
+    transform: translateX(15px);
+    color: #fff;
+    font-weight: 600;
+}
+
+.b3 .button__icon {
+    position: absolute;
+    transform: translateX(150px);
+    height: 100%;
+    width: 30px;
+    background-color: #192b8f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b3 .svg {
+    width: 30px;
+    stroke: #fff;
+}
+
+.b3:hover {
+    background: #192b8f;
+}
+
+.b3:hover .button__text {
+    color: transparent;
+}
+
+.b3:hover .button__icon {
+    width: 180px;
+    transform: translateX(0);
+}
+
+.b3:active .button__icon {
+    background-color: #192b8f;
+}
+
+.b3:active {
+    border: 1px solid #192b8f;
+}
+
+/* From Uiverse.io by Yaya12085 */
+.card {
+    overflow: hidden;
+    position: fixed;
+    background-color: #ffffff;
+    top: 100px;
+    right: 20px;
+    z-index: 1000;
+    text-align: left;
+    border-radius: 0.5rem;
+    max-width: 300px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.header {
+    padding: 1.25rem 1rem 1rem 1rem;
+    background-color: #ffffff;
+}
+
+.image {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fee2e2;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+}
+
+.image svg {
+    color: #dc2626;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.content {
+    margin-top: 0.75rem;
+    text-align: center;
+}
+
+.title {
+    color: #111827;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.message {
+    margin-top: 0.5rem;
+    color: #6b7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.actions {
+    margin: 0.75rem 1rem;
+    background-color: #f9fafb;
+}
+
+.desactivate {
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+    background-color: #dc2626;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    justify-content: center;
+    width: 100%;
+    border-radius: 0.375rem;
+    border-width: 1px;
+    border-color: transparent;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.cancel {
+    display: inline-flex;
+    margin-top: 0.75rem;
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    color: #374151;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    justify-content: center;
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
